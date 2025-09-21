@@ -1,0 +1,43 @@
+javascript exexcution phase
+
+// step 1
+Global Execution Context (GEC)
+The Global Execution Context is created first.
+It has two main components:
+1 Memory Component (Variable Environment): Where variables and functions are stored.
+2 Code Component (Thread of Execution): Where code is executed line by line.
+The this keyword in the global context refers to the global object 
+(global(window) in browsers, global({}) in Node.js)
+
+// step 2
+Phases of Execution Context
+
+Memory Creation Phase (Hoisting):
+Variables declared with var are initialized with undefined.
+Functions are stored in memory along with their entire definitions
+
+Execution Phase:
+Code is executed line by line.
+Variables are assigned values.
+Function calls are executed, and logic is processed.
+
+// step 3 (optional)
+Function Execution Context (FEC)
+Whenever a function is called, a new Function Execution Context (FEC) is created.
+this block have new variable envioirment + execution thread
+
+Variable Environment: A new memory space for variables inside the function.
+Execution Thread: Executes the function's code.
+
+Steps for FEC:
+The same Memory Creation Phase and Execution Phase are repeated for the function.
+
+Once the function execution is complete, the return value is sent back to the calling context.
+The FEC is then deleted from the Call Stack.
+
+// call stack 
+1 The Call Stack follows the LIFO (Last In, First Out) principle.
+2 It manages the order of execution contexts.
+When a function is invoked:
+1 Its execution context is pushed onto the stack.
+2 After execution, its context is popped from the stack.
