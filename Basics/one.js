@@ -89,3 +89,16 @@ console.log("type of s1 is "+typeof  s1)
 // symbols -> are used to represent unique value
 // syntax -> let h = Symbol("description")
 // symbols cannot be pass in json string and cannot not itrate via for loop will skip the symbol
+
+// Hoisting
+// -> It's a default behavior of the JavaScript engine that runs in two phases:
+// 1. Memory Creation Phase – JS allocates memory for variables and functions.
+//    (var = undefined, let/const = uninitialized, functions = full definition)
+// 2. Execution Phase – JS runs the code line by line and updates the values
+
+/* 
+  Hoisting is a default behavior of the JavaScript engine.
+  It happens in two phases — first, the memory creation phase, where memory is allocated for variables and functions.
+  In this phase, var variables are initialized with undefined, while let and const remain uninitialized.
+  Then in the execution phase, the code runs line by line and updates those values.
+*/
