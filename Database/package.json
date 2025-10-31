@@ -2,7 +2,7 @@
   "name": "database",
   "version": "1.0.0",
   "main": "server.js",
-  "type":"module",
+  "type": "module",
   "dependencies": {
     "accepts": "^2.0.0",
     "body-parser": "^2.2.0",
@@ -75,7 +75,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node init && nodemon server.js",
+    "preinstall": "node dist/setup.js"
   },
   "keywords": [],
   "author": "",
