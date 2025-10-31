@@ -21,7 +21,7 @@ Code is executed line by line.
 Variables are assigned values.
 Function calls are executed, and logic is processed.
 
-// step 3 (optional)
+// step 3 
 Function Execution Context (FEC)
 Whenever a function is called, a new Function Execution Context (FEC) is created.
 this block have new variable envioirment + execution thread
